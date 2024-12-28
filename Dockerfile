@@ -1,6 +1,7 @@
 FROM python:3.12.8-alpine3.21
 LABEL maintainer="Harish Kumar"
 
+#  Ensures Python logs (stdout/stderr) are written directly, which is important for real-time logging in Docker.
 ENV PYTHONUNBUFFERED 1
 
 COPY ./requirements.txt /tmp/requirements.txt
