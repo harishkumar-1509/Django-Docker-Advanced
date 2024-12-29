@@ -30,7 +30,7 @@ jobs:
       - name: Build Docker Image
         run: |
           docker compose build
-          docker tag django-docker-advanced-app:latest ${{ secrets.DOCKERHUB_USERNAME }}/python:latest
+          docker tag recipie-app-api-app:latest ${{ secrets.DOCKERHUB_USERNAME }}/python:latest
 
       # Step 6: Push the Docker Image to Docker Hub
       - name: Push Docker Image
